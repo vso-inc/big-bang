@@ -771,9 +771,9 @@ twistlock:
 addons:
   argocd:
     # -- Toggle deployment of ArgoCD.
-    enabled: false
+    enabled: true
     git:
-      repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/argocd.git
+      repo: https://repo1.dso.mil/big-bang/product/packages/argocd.git
       path: "./chart"
       tag: "5.22.1-bb.0"
 
