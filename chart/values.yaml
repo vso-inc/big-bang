@@ -159,7 +159,8 @@ istio:
   # Ingress gateways that require more configuration can be completed using `istio.values`
   ingressGateways:
     public-ingressgateway:
-      type: "LoadBalancer" # or "NodePort"
+      type: "NodePort"
+      nodePortBase: 30000
       kubernetesResourceSpec: {} # https://istio.io/latest/docs/reference/config/istio.operator.v1alpha1/#KubernetesResourcesSpec
 
     # private-ingressgateway:
