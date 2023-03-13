@@ -11,4 +11,4 @@ spec:
   interval: 10m
   url: https://github.com/vso-inc/big-bang.git
   ref:
-    tag: 1.55.0
+    branch: master
