@@ -16,10 +16,12 @@ configMapGenerator:
     behavior: create
     literals:
     - values.yaml=
+    - ingress-certs.yaml=
   - name: environment
     behavior: create
     literals:
     - values.yaml=
+    - ingress-certs.yaml=
 
 # Flux combines secrets and configmaps in `valuesFrom`.  Kustomize
 # cannot distinguish between them when applying suffixes.  Therefore,
@@ -31,7 +33,9 @@ secretGenerator:
     behavior: create
     literals:
     - values.yaml=
+    - ingress-certs.yaml=
   - name: environment-bb
     behavior: create
     literals:
     - values.yaml=
+    - ingress-certs.yaml=
