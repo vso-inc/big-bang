@@ -733,7 +733,7 @@ monitoring:
 #
 twistlock:
   # -- Toggle deployment of Twistlock.
-  enabled: true
+  enabled: false
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/security-tools/twistlock.git
     path: "./chart"
