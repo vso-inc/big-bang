@@ -28,3 +28,25 @@ logging:
           limits:
             cpu: null
             memory: null
+gatekeeper:
+  values:
+    replicas: 1
+    controllerManager:
+      resources:
+        requests:
+          cpu: 100m
+          memory: 512Mi
+        limits:
+          cpu: null
+          memory: null
+    audit:
+      resources:
+        requests:
+          cpu: 400m
+          memory: 768Mi
+        limits:
+          cpu: null
+          memory: null
+    violations:
+      allowedDockerRegistries:
+        enforcementAction: dryrun
