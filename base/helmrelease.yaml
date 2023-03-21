@@ -38,3 +38,5 @@ spec:
       name: environment-bb
     - kind: ConfigMap
       name: environment
+    - kind: Secret
+      name: bigbang-ingress-certs

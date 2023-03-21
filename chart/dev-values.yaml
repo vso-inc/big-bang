@@ -1,0 +1,30 @@
+logging:
+  values:
+    kibana:
+      count: 1
+      resources:
+        requests:
+          cpu: 400m
+          memory: 1Gi
+        limits:
+          cpu: null  # nonexistent cpu limit results in faster spin up
+          memory: null
+    elasticsearch:
+      master:
+        count: 1
+        resources:
+          requests:
+            cpu: 400m
+            memory: 2Gi
+          limits:
+            cpu: null
+            memory: null
+      data:
+        count: 1
+        resources:
+          requests:
+            cpu: 400m
+            memory: 2Gi
+          limits:
+            cpu: null
+            memory: null
